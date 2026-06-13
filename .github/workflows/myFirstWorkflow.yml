@@ -14,17 +14,15 @@ jobs:
         run: cat /etc/os-release
       -  name:  Calling Sleep
          run: sleep 20
-      
 
-     job2:
+      job2:
       name:  JOB2
       runs-on:  ubuntu-latest
-
       steps:
-      -  name:  Checking the Hostanme for Runner
-         run: Hostanme
-      -  name:  Running multiple commands
-         run: |
+      - name: Checking the Hostanme for Runner
+        run: Hostanme
+      - name:  Running multiple commands
+        run: |
           echo " Hi from kulbhushan mayer"
           echo "Current time is `date`"
           sleep 20
